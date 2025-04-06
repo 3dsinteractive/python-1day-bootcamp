@@ -63,7 +63,36 @@ def main():
     print(my_dict["name"])
     my_dict["gender"] = "Female"
     print(my_dict)
+    my_dict["properties"] = {"height": 170, "weight": 60}
+    print(my_dict["properties"]["height"])
 
+    my_tuple = (1, 2, 2, 5, 3)
+    print(my_tuple)
+    print(my_tuple.index(2))
+    print(my_tuple.count(2))
+
+    my_set = {1, 2, 3, 4, 5}
+    print(type(my_set))
+    my_set.add(6)
+    print(my_set)
+
+    str_list = ["Hello", "World", "Hello", "World"]
+    str_set = set(str_list)
+    print(str_set)
+    str_set.add("Python")
+    print(str_set)
+    str_set.remove("Hello")
+    print(str_set)
+
+    my_bool = True
+    print(my_bool)
+    print(type(my_bool))
+    my_bool = False
+    print(my_bool)
+    print(type(my_bool))
+    my_bool = None
+    print(my_bool)
+    print(type(my_bool))
 
 if __name__ == "__main__":
     main()
