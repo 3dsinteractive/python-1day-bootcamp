@@ -17,6 +17,13 @@ def main():
     now = datetime.now()
     print(f"Current time: {now:%Y-%m-%d %H:%M:%S}")
 
+    name = "Luna"
+    job = "developer"
+    print(f"""
+Hello {name},
+Welcome aboard as our new {job}!
+""")
+
 if __name__ == "__main__":
     main()
 
